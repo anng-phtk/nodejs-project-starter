@@ -47,7 +47,7 @@ cd "$DIR_NAME" || { echo "Error: Could not change to directory '$DIR_NAME'"; exi
 
 # Run npm commands
 npm init -y || { echo "Error running npm init -y"; exit 1; }
-npm install express axios dotenv || { echo "Error installing express axios dotenv"; exit 1; }
+npm install express axios dotenv express-ejs-layouts || { echo "Error installing express axios dotenv express-ejs-layouts"; exit 1; }
 npm install --save-dev webpack webpack-cli webpack-node-externals nodemon || { echo "Error installing dev dependencies for Webpack and nodemon"; exit 1; }
 npm install --save-dev @babel/core @babel/preset-env babel-loader || { echo "Error installing dev dependencies for Babel"; exit 1; }
 
